@@ -1,22 +1,25 @@
 #include<stdio.h>
-void PrintEven(int iNo)
+int MultFact (int iNo)
 {
-    int i=0;
-    if(iNo<=0)
+    int iCnt =0;
+    int iFact =0;
 
-    
-    for(i =0;i<=iNo;i++)
+    for (iCnt =1;iCnt =iNo ;iCnt++)
     {
-        
-        printf("%d\t",2*i);
+        iFact = iFact * iCnt;
+        return ;
     }
 }
 int main()
 {
     int iValue =0;
-    printf("enter number \n");
+    int iRet =0;
+    printf("Enter Number ");
     scanf("%d",&iValue);
-    PrintEven(iValue);
+
+    iRet = MultFact(iValue);
+    printf("%d",iRet);
+    
 
     return 0;
 }
